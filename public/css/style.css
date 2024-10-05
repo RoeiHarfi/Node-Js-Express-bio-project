@@ -1,0 +1,145 @@
+body {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 60px;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  background-position: center;
+  background-color: rgb(255, 230, 230);
+}
+p {
+  width: 310px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: right;
+  position: fixed;
+  padding: 5px;
+}
+div,
+form {
+  margin: 10px;
+  padding: 5px;
+}
+a {
+  display: inline-block;
+}
+input,
+select {
+  font-size: 15px;
+  margin: 10px;
+  width: 140px;
+  border-radius: 5px;
+  background-color: rgb(240, 240, 240);
+}
+.long {
+  width: 160px;
+}
+.short {
+  width: 60px;
+}
+.alert {
+  font-size: 16px;
+  font-weight: lighter;
+}
+button {
+  font-size: 15px;
+  height: 50px;
+  width: 170px;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: rgb(240, 240, 240);
+}
+.selected {
+  background-color: rgb(255, 190, 190);
+  border-color: rgb(215, 55, 30);
+}
+.disabled {
+  pointer-events: none;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-left: 170px;
+  margin-bottom: 7px;
+  text-align: left;
+}
+.small {
+  height: 30px;
+  width: 100px;
+}
+.medium {
+  height: 50px;
+  width: 100px;
+}
+.yellow {
+  background-color: rgb(250, 220, 130);
+  border-color: rgb(215, 55, 30);
+}
+.red {
+  background-color: rgb(250, 130, 130);
+  border-color: rgb(215, 55, 30);
+}
+.green {
+  background-color: rgb(130, 250, 152);
+  border-color: rgb(30, 166, 215);
+}
+.header {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 0px; 
+  padding: 5px;
+  font-size: 15px;
+  position: fixed;
+  text-align: center;
+  /*background-color: rgb(250, 130, 130);*/
+  backdrop-filter: blur(10px);
+  width:100%;
+}
+.right {
+  margin-top: -60px;
+  right: 0;
+  width: 200px;
+  margin-right: 100px;
+  position: fixed;
+}
+.left {
+  margin-top: -60px;
+  left: 0;
+  width: 200px;
+  margin-left: 100px;
+  position: fixed;
+}
+table,
+th,
+td {
+  margin: 5px;
+  padding: 7px;
+  background-color: rgb(250, 230, 230);
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td {
+  font-size: 15px;
+}
+.adjust,
+input {
+  text-align: start;
+  unicode-bidi: plaintext;
+}
+.mini {
+  margin-left: auto; 
+  margin-right: auto;
+  padding: 0px;
+  width:100%;
+  height:100%;
+}
+.center {
+  text-align: center;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "bio-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "engines": {
+    "node": "^18.18.0",
+    "npm": "^10.1.0"
+  },
+  "scripts": {
+    "test": "mocha 'tests.test.js'"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "puppeteer-html-pdf": "^4.0.8"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.9",
+    "mocha": "^10.7.3",
+    "supertest": "^7.0.0"
+  },
+  "mocha": {
+    "slow": 1500,
+    "exit": true
+  }
+}

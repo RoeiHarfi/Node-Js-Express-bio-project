@@ -1,0 +1,58 @@
+[
+  {
+    "username": "test_admin",
+    "type": "admin",
+    "name": "test_acc",
+    "id": "000000000",
+    "password": "000000"
+  },
+  {
+    "username": "test_user",
+    "type": "admin",
+    "name": "test_acc",
+    "id": "000000001",
+    "password": "000000"
+  },
+  {
+    "username": "test_student",
+    "type": "research-student",
+    "name": "test_acc",
+    "id": "000000002",
+    "password": "000000"
+  },
+  {
+    "username": "admin",
+    "type": "admin",
+    "name": "Roei Harfi",
+    "id": "315848820",
+    "password": "111111"
+  },
+  {
+    "username": "admin2",
+    "type": "admin",
+    "name": "Elena Chestnov",
+    "id": "317586204",
+    "password": "22222"
+  },
+  {
+    "username": "user",
+    "type": "user",
+    "name": "Yael Shriki",
+    "id": "972846284",
+    "password": "33333"
+  },
+  {
+    "username": "user2",
+    "type": "user",
+    "name": "Shlomo Levi",
+    "id": "154875210",
+    "password": "44444"
+  },
+  {
+    "username": "student",
+    "type": "research-student",
+    "name": "Avi Cohen",
+    "id": "372542456",
+    "password": "55555"
+  }
+]

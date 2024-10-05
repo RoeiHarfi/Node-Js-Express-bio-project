@@ -1,0 +1,48 @@
+<%- include('./partials/header.ejs') %>
+<script>
+  //Check valid id
+  function checkTz() {
+    let value = document.getElementById("tz").value;
+    document.getElementById("tz").value = value.replace(/[^0-9]/g, "");
+  }
+</script>
+
+<!-- BASIS -->
+<!-- קליטת מנות דם -->
+<form action="/input" method="POST">
+  <label for="type">סוג דם:</label>
+  <select name="type" id="type" class="short">
+    <option value="A+">A+</option>
+    <option value="O+">O+</option>
+    <option value="B+">B+</option>
+    <option value="AB+">AB+</option>
+    <option value="A-">A-</option>
+    <option value="O-">O-</option>
+    <option value="B-">B-</option>
+    <option value="AB-">AB-</option>
+  </select>
+  <br />
+  <label for="date">תאריך תרומה:</label>
+  <input
+    type="date"
+    name="date"
+    id="date"
+    required
+    max="<%= new Date().toISOString().split('T')[0] %>"
+    value="<%= new Date().toISOString().split('T')[0] %>"
+  />
+  <br />
+  <label for="tz">תעודת זהות:</label>
+  <input type="text" name="tz" id="tz" oninput="checkTz()" pattern=".{9,9}" maxlength="9" title="תעודת זהות צריכה להיות 9 ספרות" value="" required />
+  <br />
+  <label for="name">שם מלא:</label>
+  <input type="text" name="name" id="name" class="long" required />
+
+  <br /><br />
+  <button type="submit">שמור</button>
+  <br />
+  <%= alert %>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<%- include('./partials/header.ejs') %>
+
+<!-- FINAL -->
+<!-- צפייה במאגר הדם -->
+<br>
+<div>
+  מנות בתוקף
+  <table>
+    <tr>
+      <th>סוג דם</th>
+      <% for (const type in db.goodInv) { %>
+      <th><%= type %></th>
+      <% } %>
+    </tr>
+      <tr>
+        <td>כמות במלאי</td>
+        <% for (const type in db.goodInv) { %>
+        <td style="text-align:center; color:<%= db.goodInv[type]==0? 'red' : 'black' %>;"><%= db.goodInv[type] %></td>
+        <% } %>
+      </tr>
+  </table>
+  <br>
+  מנות שפג תוקפן בקרוב
+  <table>
+    <tr>
+      <th>סוג דם</th>
+      <th>שם תורם</th>
+      <th>ת"ז תורם</th>
+      <th>תאריך תרומה</th>
+      <th>ימים שנשארו לתוקף</th>
+    </tr>
+    <% if (db.todayInv.length> 0) { %>
+      <% for (const dose of db.todayInv) { %>
+        <tr class="center">
+          <td><%= dose.type %></td>
+          <td class="adjust"> <%= dose.name || "-" %></td>
+          <td><%= dose.id || "-" %></td>
+          <td><%= dose.date.split("-").reverse().join("/") %></td>
+          <td><%= dose.left %></td>
+        </tr>
+      <% } %>
+    <% } else { %>
+      <tr class="center">
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    <% } %>
+  </table>
+  <br>
+  מנות שפג תוקפן
+  <table>
+    <tr>
+      <th>סוג דם</th>
+      <th>שם תורם</th>
+      <th>ת"ז תורם</th>
+      <th>תאריך תרומה</th>
+      <th></th>
+    </tr>
+    <% if (db.expInv.length > 0) { %>
+      <% for (const dose of db.expInv) { %>
+        <form action="/inventory" method="POST">
+          <tr class="center">
+            <td><%= dose.type %></td>
+            <td class="adjust"><%= dose.name || "-" %></td>
+            <td><%= dose.id || "-" %></td>
+            <td><%= dose.date.split("-").reverse().join("/") %></td>
+            <td>
+              <button type="submit" class="small green" name="remove" value="<%= dose.type+'_'+dose.id+'_'+dose.date %>">סולק</button>
+            </td>
+          </tr>
+        </form>
+      <% } %>
+    <% } else { %>
+      <tr class="center">
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td class="small"></td>
+      </tr>
+    <% } %>
+  </table>
+</div>
+
+</body>
+</html>

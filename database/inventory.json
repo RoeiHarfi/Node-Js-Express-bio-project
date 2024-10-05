@@ -1,0 +1,55 @@
+{
+  "A+": [
+    { "name": "Nadav Levi", "id": "465465354", "date": "2024-08-29" },
+    { "name": "Roni Halevy", "id": "453453453", "date": "2024-10-05" },
+    { "name": "Bar Cohen", "id": "458663344", "date": "2024-10-05" },
+    { "name": "Roni Maimon", "id": "945753412", "date": "2024-10-05" },
+    { "name": "Avi Tavor", "id": "969312312", "date": "2024-10-05" },
+    { "name": "Sara Rosenberg", "id": "478545812", "date": "2024-10-05" },
+    { "name": "Tal Peretz", "id": "213354643", "date": "2024-10-05" }
+  ],
+  "O+": [
+    { "name": "Tom Nahum", "id": "564564635", "date": "2024-10-05" },
+    { "name": "Bar Harel", "id": "143541354", "date": "2024-10-05" },
+    { "name": "Dani Cohen", "id": "145324523", "date": "2024-10-05" },
+    { "name": "Shira Eliav", "id": "324863786", "date": "2024-10-05" },
+    { "name": "Or Eliav", "id": "202475237", "date": "2024-10-05" }
+  ],
+  "B+": [
+    { "name": "Roei Harfi", "id": "315848820", "date": "2024-09-03" },
+    { "name": "Karim Abdul Jabar", "id": "456654654", "date": "2024-10-05" },
+    { "name": "Sima Cohen", "id": "453654321", "date": "2024-10-05" },
+    { "name": "Reut Ben Hamo", "id": "456634354", "date": "2024-10-05" },
+    { "name": "Bar Golan", "id": "210321321", "date": "2024-10-05" },
+    { "name": "Eli Halevy", "id": "786786345", "date": "2024-10-05" },
+    { "name": "Eli Amir", "id": "452345245", "date": "2024-10-05" }
+  ],
+  "AB+": [
+    { "name": "Elena Chestnov", "id": "317586204", "date": "2024-09-02" },
+    { "name": "Charlie Mada", "id": "416468796", "date": "2024-10-05" },
+    { "name": "Ivet Liberman", "id": "163513564", "date": "2024-10-05" },
+    { "name": "Or Lavi", "id": "456436254", "date": "2024-10-05" },
+    { "name": "Itai Maimon", "id": "452345234", "date": "2024-10-05" },
+    { "name": "Gal Navon", "id": "452312312", "date": "2024-10-05" }
+  ],
+  "A-": [
+    { "name": "Omer Levi", "id": "468746354", "date": "2024-10-05" },
+    { "name": "Shimon Eliav", "id": "135468746", "date": "2024-10-05" },
+    { "name": "Zohar Eliav", "id": "132584684", "date": "2024-10-05" },
+    { "name": "Or Cohen", "id": "216358468", "date": "2024-10-05" }
+  ],
+  "O-": [
+    { "name": "Yair Shaked", "id": "745645634", "date": "2024-10-05" },
+    { "name": "Miri Lavi", "id": "798786453", "date": "2024-10-05" },
+    { "name": "Sara Gal", "id": "452452220", "date": "2024-10-05" },
+    { "name": "Zohar Navon", "id": "456345345", "date": "2024-10-05" },
+    { "name": "Avital Dayan", "id": "452300121", "date": "2024-10-05" },
+    { "name": "Noa Amir", "id": "413654687", "date": "2024-10-05" }
+  ],
+  "B-": [
+    { "name": "Shlomi Shalimi", "id": "465465432", "date": "2024-10-05" },
+    { "name": "Noa Kaplan", "id": "475846854", "date": "2024-10-05" },
+    { "name": "Noa Ben-David", "id": "423123335", "date": "2024-10-05" }
+  ],
+  "AB-": [{ "name": "Bar Tavor", "id": "786452312", "date": "2024-10-05" }]
+}

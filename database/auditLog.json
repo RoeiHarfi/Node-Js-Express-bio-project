@@ -1,0 +1,718 @@
+{
+  "title": "BECS",
+  "last_modified": "2024-10-05",
+  "log": [
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type B+: 0 → 1",
+      "date": "2024-08-26",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Yarin Haim", "id": "346982241", "date": "2024-08-25" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type AB+: 0 → 1",
+      "date": "2024-10-04",
+      "worker_id": "315848820",
+      "dose": [{ "name": "Elena Chestnov", "id": "317586204", "date": "2024-10-04" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type B+: 1 → 2",
+      "date": "2024-10-05",
+      "worker_id": "317586204",
+      "dose": [{ "name": "Roei Harfi", "id": "315848820", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A+: 0 → 1",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "David Shlomi", "id": "987542310", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A+: 1 → 2",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Shlomi David", "id": "445158455", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type B-: 0 → 1",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Yaron Viali", "id": "546354684", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type B-: 1 → 2",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Shlomit Cohen", "id": "546846352", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O-: 0 → 1",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Einat Haviv", "id": "354687468", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Dispense blood",
+      "status": "Success",
+      "change": "Type A+: 2 → 1",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "David Shlomi", "id": "987542310", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Dispense blood",
+      "status": "Success",
+      "change": "Type O-: 1 → 0",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Einat Haviv", "id": "354687468", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Dispense blood",
+      "status": "Failed",
+      "change": "Type AB-: 0 → 0",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": []
+    },
+    {
+      "action": "Dispense blood",
+      "status": "Success",
+      "change": "Type B-: 2 → 1",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Yaron Viali", "id": "546354684", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type AB+: 1 → 2",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Charlie Mada", "id": "416468796", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A+: 1 → 2",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Avi Ron", "id": "456746534", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A+: 2 → 3",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Eli Copter", "id": "768746854", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A+: 3 → 4",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Moti Luhim", "id": "468465132", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A-: 0 → 1",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Shiri Shalom", "id": "687468746", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Dispense blood",
+      "status": "Failed",
+      "change": "Type AB-: 0 → 0",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": []
+    },
+    {
+      "action": "Dispense blood",
+      "status": "Success",
+      "change": "Type A-: 1 → 0",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Shiri Shalom", "id": "687468746", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Dispense blood",
+      "status": "Success",
+      "change": "Type AB+: 2 → 1",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Elena Chestnov", "id": "317586204", "date": "2024-10-03" }]
+    },
+    {
+      "action": "Dispense blood",
+      "status": "Failed",
+      "change": "Type O+: 0 → 0",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": []
+    },
+    {
+      "action": "Dispense blood",
+      "status": "Success",
+      "change": "Type A+: 4 → 3",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Shlomi David", "id": "445158455", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type AB-: 0 → 1",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Shira Nadal", "id": "654685468", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type B-: 1 → 2",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Frida Maman", "id": "685468468", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O+: 0 → 1",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Mira Levi", "id": "534654684", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O-: 0 → 1",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Shimi Tavori", "id": "756746874", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O-: 1 → 2",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Dudu Tassa", "id": "568464868", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O-: 2 → 3",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Bibi Netanyahu", "id": "846354354", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O-: 3 → 4",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Miri Regev", "id": "468546874", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A-: 0 → 1",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Yair Lapid", "id": "635465465", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type AB+: 1 → 2",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Ivet Liberman", "id": "163513564", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Dispense blood",
+      "status": "Parital success",
+      "change": "Type B+: 1 → 0",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Roei Harfi", "id": "315848820", "date": "2024-10-04" }]
+    },
+    {
+      "action": "Dispense blood",
+      "status": "Success",
+      "change": "Type O-: 4 → 2",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [
+        { "name": "Shimi Tavori", "id": "756746874", "date": "2024-10-05" },
+        { "name": "Dudu Tassa", "id": "568464868", "date": "2024-10-05" }
+      ]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type B+: 0 → 1",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Karim Abdul Jabar", "id": "456654654", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A+: 3 → 4",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Shaquil Oneil", "id": "856764543", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type B-: 2 → 3",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Shlomi Shalimi", "id": "465465432", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Dispense blood",
+      "status": "Success",
+      "change": "Type B-: 3 → 1",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [
+        { "name": "Shlomit Cohen", "id": "546846352", "date": "2024-10-05" },
+        { "name": "Frida Maman", "id": "685468468", "date": "2024-10-05" }
+      ]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type AB-: 1 → 2",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Matan Nahum", "id": "544655465", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O+: 1 → 2",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Tom Nahum", "id": "564564635", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O-: 2 → 3",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Eden Levi", "id": "415336451", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type B+: 1 → 2",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Sima Cohen", "id": "453654321", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type B+: 2 → 3",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Reut Ben Hamo", "id": "456634354", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Dispense blood (MCI)",
+      "status": "Success",
+      "change": "Type O-: 3 → 0",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [
+        { "name": "Bibi Netanyahu", "id": "846354354", "date": "2024-10-05" },
+        { "name": "Miri Regev", "id": "468546874", "date": "2024-10-05" },
+        { "name": "Eden Levi", "id": "415336451", "date": "2024-10-05" }
+      ]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A+: 4 → 5",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Eden Amir", "id": "746546546", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O-: 0 → 1",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Nadav Ben-David", "id": "645123654", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O-: 1 → 2",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Amit Shalom", "id": "352413541", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type B-: 1 → 2",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Noa Kaplan", "id": "475846854", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O+: 2 → 3",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Bar Harel", "id": "143541354", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type B+: 3 → 4",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Bar Golan", "id": "210321321", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A+: 5 → 6",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Lior Tavor", "id": "135214352", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type AB+: 2 → 3",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Or Lavi", "id": "456436254", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Dispense blood",
+      "status": "Parital success",
+      "change": "Type A+: 6 → 0",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [
+        { "name": "Avi Ron", "id": "456746534", "date": "2024-10-05" },
+        { "name": "Eli Copter", "id": "768746854", "date": "2024-10-05" },
+        { "name": "Moti Luhim", "id": "468465132", "date": "2024-10-05" },
+        { "name": "Shaquil Oneil", "id": "856764543", "date": "2024-10-05" },
+        { "name": "Eden Amir", "id": "746546546", "date": "2024-10-05" },
+        { "name": "Lior Tavor", "id": "135214352", "date": "2024-10-05" }
+      ]
+    },
+    {
+      "action": "Dispense blood",
+      "status": "Success",
+      "change": "Type O+: 3 → 2",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Mira Levi", "id": "534654684", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A+: 0 → 1",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Roni Halevy", "id": "453453453", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O-: 2 → 3",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Yair Shaked", "id": "745645634", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type AB+: 3 → 4",
+      "date": "2024-10-05",
+      "worker_id": "315848820",
+      "dose": [{ "name": "Elena Chestnov", "id": "317586204", "date": "2024-09-02" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type B+: 4 → 5",
+      "date": "2024-10-05",
+      "worker_id": "317586204",
+      "dose": [{ "name": "Roei Harfi", "id": "315848820", "date": "2024-09-03" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A+: 0 → 1",
+      "date": "2024-10-05",
+      "worker_id": "317586204",
+      "dose": [{ "name": "Nadav Levi", "id": "465465354", "date": "2024-08-29" }]
+    },
+    {
+      "action": "Remove dose",
+      "status": "Success",
+      "change": "Type B+",
+      "date": "2024-10-05",
+      "worker_id": "317586204",
+      "dose": [{ "name": "Yarin Haim", "id": "346982241", "date": "2024-08-25" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type AB-: 2 → 3",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Dani Lavi", "id": "456345341", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type AB-: 3 → 4",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Bar Tavor", "id": "786452312", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O-: 3 → 4",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Miri Lavi", "id": "798786453", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O-: 4 → 5",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Sara Gal", "id": "452452220", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O-: 5 → 6",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Zohar Navon", "id": "456345345", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type AB+: 4 → 5",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Itai Maimon", "id": "452345234", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O+: 2 → 3",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Dani Cohen", "id": "145324523", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type B-: 2 → 3",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Noa Ben-David", "id": "423123335", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A+: 1 → 2",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Bar Cohen", "id": "458663344", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A+: 2 → 3",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Roni Maimon", "id": "945753412", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O+: 3 → 4",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Shira Eliav", "id": "324863786", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O+: 4 → 5",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Or Eliav", "id": "202475237", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type B+: 5 → 6",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Eli Halevy", "id": "786786345", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type B+: 6 → 7",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Eli Amir", "id": "452345245", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A+: 3 → 4",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Avi Tavor", "id": "969312312", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A+: 4 → 5",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Sara Rosenberg", "id": "478545812", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type AB+: 5 → 6",
+      "date": "2024-10-05",
+      "worker_id": "154875210",
+      "dose": [{ "name": "Gal Navon", "id": "452312312", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Dispense blood",
+      "status": "Parital success",
+      "change": "Type A-: 1 → 0",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Yair Lapid", "id": "635465465", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Dispense blood",
+      "status": "Success",
+      "change": "Type O-: 6 → 4",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [
+        { "name": "Nadav Ben-David", "id": "645123654", "date": "2024-10-05" },
+        { "name": "Amit Shalom", "id": "352413541", "date": "2024-10-05" }
+      ]
+    },
+    {
+      "action": "Dispense blood",
+      "status": "Success",
+      "change": "Type AB-: 4 → 1",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [
+        { "name": "Shira Nadal", "id": "654685468", "date": "2024-10-05" },
+        { "name": "Matan Nahum", "id": "544655465", "date": "2024-10-05" },
+        { "name": "Dani Lavi", "id": "456345341", "date": "2024-10-05" }
+      ]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O-: 4 → 5",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Avital Dayan", "id": "452300121", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type O-: 5 → 6",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Noa Amir", "id": "413654687", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A-: 0 → 1",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Omer Levi", "id": "468746354", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A-: 1 → 2",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Shimon Eliav", "id": "135468746", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A-: 2 → 3",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Zohar Eliav", "id": "132584684", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A-: 3 → 4",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Or Cohen", "id": "216358468", "date": "2024-10-05" }]
+    },
+    {
+      "action": "Receive blood",
+      "status": "Success",
+      "change": "Type A+: 5 → 6",
+      "date": "2024-10-05",
+      "worker_id": "972846284",
+      "dose": [{ "name": "Tal Peretz", "id": "213354643", "date": "2024-10-05" }]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+<%- include('./partials/header.ejs') %>
+<script>
+  //Show password field
+  function showField() {
+    let field = document.getElementById("password");
+    field.setAttribute("type", "text");
+  }
+  //Hide password field
+  function hideField() {
+    let field = document.getElementById("password");
+    field.setAttribute("type", "password");
+  }
+</script>
+
+<!-- FINAL -->
+<!-- שינוי סיסמה-->
+<div>
+  <table>
+    <tr>
+      <th>שם משתמש</th>
+      <th>שם מלא</th>
+      <th>תעודת זהות</th>
+      <th>סיסמה</th>
+    </tr>
+    <form action="/account" id="form" method="POST">
+      <tr>
+        <td class="adjust">
+          <input type="text" name="username" id="username" class="long" disabled value="<%= user.username %>" />
+        </td>
+        <td class="adjust"><input type="text" name="name" id="name" class="long" disabled value="<%= user.name %>" /></td>
+        <td class="adjust"><input type="text" name="tz" id="tz" pattern=".{9,9}" maxlength="9" title="תעודת זהות צריכה להיות 9 ספרות" disabled value="<%= user.id %>" /></td>
+        <td class="adjust">
+          <button type="submit" class="small" name="edit">עדכן סיסמה</button>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            onmouseover="showField()"
+            onmouseout="hideField()"
+            value="<%= user.password %>"
+            required
+          />
+        </td>
+      </tr>
+    </form>
+  </table>
+  <%= alert %>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<%- include('./partials/header.ejs') %>
+
+<!-- HIPPA -->
+<!-- התחברות -->
+<form action="/" method="POST">
+  <label for="username">שם משתמש:</label>
+  <input type="text" name="username" id="username" value="<%= locals.fields? fields.username : '' %>" required />
+  <br />
+  <label for="password">סיסמה:</label>
+  <input type="password" name="password" id="password" class="long" value="<%= locals.fields? fields.password : '' %>" required />
+
+  <br /><br />
+  <button type="submit">כניסה</button>
+  <br />
+  <%= alert %>
+</form>
+
+</body>
+</html>

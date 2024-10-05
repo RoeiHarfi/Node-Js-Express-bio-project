@@ -1,0 +1,28 @@
+<%- include('./partials/header.ejs') %>
+
+<!-- BASIS -->
+<!-- ניפוק מנות דם -->
+<form action="/give" method="POST">
+  <label for="type">סוג דם:</label>
+  <select name="type" id="type" class="short">
+    <option value="A+" <%locals.fields&&fields.type==="A+" ? 'selected' : '' %>>A+</option>
+    <option value="O+" <%=locals.fields&&fields.type==="O+" ? 'selected' : '' %>>O+</option>
+    <option value="B+" <%=locals.fields&&fields.type==="B+" ? 'selected' : '' %>>B+</option>
+    <option value="AB+" <%=locals.fields&&fields.type==="AB+" ? 'selected' : '' %>>AB+</option>
+    <option value="A-" <%=locals.fields&&fields.type==="A-" ? 'selected' : '' %>>A-</option>
+    <option value="O-" <%=locals.fields&&fields.type==="O-" ? 'selected' : '' %>>O-</option>
+    <option value="B-" <%=locals.fields&&fields.type==="B-" ? 'selected' : '' %>>B-</option>
+    <option value="AB-" <%=locals.fields&&fields.type==="AB-" ? 'selected' : '' %>>AB-</option>
+  </select>
+  <br />
+  <label for="amount">מספר מנות דם:</label>
+  <input type="number" name="amount" id="amount" class="short" min="1" value="<%= locals.fields&&fields.amount ? fields.amount : 1 %>" />
+
+  <br /><br />
+  <button type="submit">נפק</button>
+  <br />
+  <%= alert %>
+</form>
+
+</body>
+</html>

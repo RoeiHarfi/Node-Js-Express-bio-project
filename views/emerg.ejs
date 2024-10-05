@@ -1,0 +1,17 @@
+<%- include('./partials/header.ejs') %>
+
+<!-- BASIS -->
+<!-- ניפוק מנות דם באר"ן -->
+<form action="/emerg" method="POST">
+  <label for="maxHave">כמות דם מסוג O- במלאי:</label>
+
+  <input type="text" id="maxHave" class="short" disabled value="<%= locals.fields ? fields.maxHave : 0 %>" />
+
+  <br /><br />
+  <button type="submit">נפק כמות מקסימלית</button>
+  <br />
+  <%= alert %>
+</form>
+
+</body>
+</html>

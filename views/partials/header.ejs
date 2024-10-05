@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>BECS</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/images/favicon.ico" />
+</head>
+<body>
+<div class="header">
+  <h2>בנק הדם של ישראל</h2>
+  <% if (locals.user) { %>
+    <div class="right">
+      שלום <%= user.name %>!
+      <a href="/logout"><button type="button" class="small yellow">יציאה</button></a>
+    </div>
+    <div class="left">
+      <% if (page!=names.account && page!=names.users) { %>
+          <% if (perms[user.type].includes("edit-account")) { %>
+            <a href="/account"><button type="button" class="medium"><%= names[names.account] %></button></a>
+          <% } else if (perms[user.type].includes("edit-users")) { %>  
+            <a href="/users"><button type="button" class="medium"><%= names[names.users] %></button></a>
+          <% } %>
+        </div>
+      <% } else {%>
+          <a href="/back"><button type="button" class="medium">חזור</button></a>
+      <% } %>
+    </div>
+  <% } %>
+</div>
+<center>
+  <br>
+<div>
+  <% if (page==names.account) { %>
+    <button type="button" class="selected"><%= names[names.account] %></button>
+  <% } else if (page==names.users) { %>  
+    <button type="button" class="selected"><%= names[names.users] %></button>
+  <% } else { %>  
+    <% if (locals.page && locals.user) { %>
+      <% if (perms[user.type].includes("blood-bank")) { %>
+        <a href="/input" class="<%= page==names.input? 'disabled' : '' %>">
+          <button type="button" class="<%= page==names.input? 'selected' : '' %>">
+            <%= names[names.input] %>
+        </button></a>
+        <a href="/give" class="<%= page==names.give? 'disabled' : '' %>">
+          <button type="button" class="<%= page==names.give? 'selected' : '' %>">
+            <%= names[names.give]  %>
+        </button></a>
+        <a href="/emerg" class="<%= page==names.emerg? 'disabled' : '' %>">
+          <button type="button" class="<%= page==names.emerg? 'selected' : '' %>">
+            <%= names[names.emerg] %>
+        </button></a>
+      <% } if (perms[user.type].includes("inventory")) { %>  
+        <a href="/inventory" class="<%= page==names.inventory? 'disabled' : '' %>">
+          <button type="button" class="<%= page==names.inventory? 'selected' : '' %>">
+            <%= names[names.inventory] %>
+        </button></a>
+      <% } if (perms[user.type].includes("partial-export") || perms[user.type].includes("full-export")) { %>  
+        <a href="/logs" class="<%= page==names.logs? 'disabled' : '' %>">
+          <button type="button" class="<%= page==names.logs? 'selected' : '' %>">
+            <%= names[names.logs] %>
+        </button></a>
+      <% } %>  
+    <% } else { %>
+    ברוכה הבאה!
+    <% } %>
+  <% } %>  
+    </div>
+      

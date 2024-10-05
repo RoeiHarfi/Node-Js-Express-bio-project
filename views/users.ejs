@@ -1,0 +1,97 @@
+<%- include('./partials/header.ejs') %>
+<script>
+  //Allow to delete without validation   
+  function forceSubmit(index) {
+    var form = document.getElementById("form" + (index || ""))
+    form.setAttribute("novalidate", true);
+    form.dispatchEvent(new Event('submit'));
+  }
+  //Check valid id
+  function checkTz(index) {
+    let value = document.getElementById("tz" + (index || "")).value;
+    document.getElementById("tz" + (index || "")).value = value.replace(/[^0-9]/g, "");
+  }
+  //Show password field
+  function showField(index) {
+    let field = document.getElementById("password" + (index || ""));
+    field.setAttribute("type", "text");
+  }
+  //Hide password field
+  function hideField(index) {
+    let field = document.getElementById("password" + (index || ""));
+    field.setAttribute("type", "password");
+  }
+</script>
+
+<!-- HIPPA -->
+<!-- הגדרת יוזרים -->
+<div>
+  <table>
+    <tr>
+      <th>שם משתמש</th>
+      <th>שם מלא</th>
+      <th>תעודת זהות</th>
+      <th>סיסמה</th>
+      <th>סוג משתמש</th>
+      <th></th>
+    </tr>
+    <% var index=-1; for (const u of users) { index++;%>
+      <% if (u.name == 'test_acc') continue; %>
+      <form action="/users" id="<%= 'form'+index %>" method="POST">
+        <tr>
+          <td class="adjust"><input type="text" name="username" id="username" value="<%= u.username || '' %>" required /></td>
+          <td class="adjust"><input type="text" name="name" id="name" value="<%= u.name || '' %>" required /></td>
+          <td class="adjust"><input type="text" name="tz" id="<%= 'tz'+index %>" oninput="checkTz('<%= index %>')" pattern=".{9,9}" maxlength="9" title="תעודת זהות צריכה להיות 9 ספרות" value="<%= u.id || '' %>" required /></td>
+          <td class="adjust"><input type="password" name="password" id="<%= 'password'+index %>" onmouseover="showField('<%= index %>')" onmouseout="hideField('<%= index %>')" value="<%= u.password || '' %>" required /></td>
+          <td>
+            <select name="type" id="type" <%=u.username===user.username ? 'disabled' : '' %>>
+              <option value="admin" <%=names['admin']===names[u.type] ? 'selected' : '' %>>
+                <%= names['admin'] %>
+              </option>
+              <option value="user" <%=names['user']===names[u.type] ? 'selected' : '' %>>
+                <%= names['user'] %>
+              </option>
+              <option value="research-student" <%=names['research-student']===names[u.type] ? 'selected' : '' %>>
+                <%= names['research-student'] %>
+              </option>
+            </select>
+          </td>
+          <td>
+            <button type="submit" class="small" name="edit" value="<%= index %>">עדכן</button>
+            <% if (u.username!==user.username) { %>
+              <button type="button" class="small red" name="delete" onclick="forceSubmit('<%= index %>');">מחק</button>
+              <% } %>
+          </td>
+        </tr>
+      </form>
+      <% } %>
+        <form action="/users" method="POST">
+          <tr>
+            <td class="adjust"><input type="text" name="username" id="username" value="<%= locals.fields? fields.username : '' %>" required /></td>
+            <td class="adjust"><input type="text" name="name" id="name" value="<%= locals.fields? fields.name : '' %>" required /></td>
+            <td class="adjust"><input type="text" name="tz" id="tz" oninput="checkTz()" pattern=".{9,9}" maxlength="9" title="תעודת זהות צריכה להיות 9 ספרות" value="<%= locals.fields? fields.tz : '' %>" required /></td>
+            <td class="adjust"><input type="text" name="password" id="password" value="<%= locals.fields? fields.password : '' %>" required /></td>
+            <td>
+              <select name="type" id="type">
+                <option value="admin" <%=locals.fields&&names['admin']===names[fields.type] ? 'selected' : '' %>>
+                  <%= names['admin'] %>
+                </option>
+                <option value="user" <%=!locals.fields||!fields.type ? 'selected' : '' %>>
+                  <%= names['user'] %>
+                </option>
+                <option value="research-student" <%=locals.fields&&names['research-student']===names[fields.type] ? 'selected' : '' %>>
+                  <%= names['research-student'] %>
+                </option>
+              </select>
+            </td>
+            <td>
+              <button type="submit" class="small green" name="add" value="new">הוסף</button>
+            </td>
+          </tr>
+        </form>
+  </table>
+  <%= alert %>
+</div>
+
+</body>
+</html>

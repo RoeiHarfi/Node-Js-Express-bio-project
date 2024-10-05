@@ -1,0 +1,75 @@
+<%- include('./partials/header.ejs') %>
+<script>
+  function chopChange(text) {
+    var txt = text.split(" ");
+    if (txt.length > 2) {
+      txt = txt[4] + " ← " + txt[2] + " " + txt[1].split("").reverse().join("") + " סוג";
+    }
+    else {
+      txt = txt[1].split("").reverse().join("") + " סוג";
+    }
+    txt = txt.replace("BA","AB");
+    document.currentScript.parentNode.textContent = txt;
+  }
+</script>
+
+<!-- HIPPA -->
+<!-- צפייה בלוגים -->
+<div>
+  <form action="/export" method="POST">
+    <label for="date">עדכון אחרון:</label>
+    <input type="type" name="date" id="date" class="center" disabled value="<%= audit.last_modified.split('-').reverse().join(' / ') %>" />
+    <!-- ייצוא לוגים -->
+    <button type="submit" class="small yellow">יצא לוג</button>
+  </form>
+  <table>
+    <tr>
+      <th>תאריך</th>
+      <th>פעולה</th>
+      <th>סטאטוס</th>
+      <th>שינוי</th>
+      <% if (perms[user.type].includes("full-export")) { %>
+        <th>מבצע פעולה</th>
+      <% } %>
+      <th>מנות דם</th>
+    </tr>
+    <% for (const log of audit.log.slice().reverse()) { %>
+    <tr class="center">
+      <td><%= log.date.split("-").reverse().join("/") %></td>
+      <td class="adjust"><%= names[log.action] %></td>
+      <td class="adjust"><%= names[log.status] %></td>
+      <td align="right" dir="ltr">
+        <label><script>chopChange("<%= log.change %>");</script></label >
+      </td>
+      <% if (perms[user.type].includes("full-export")) { %>
+        <td><%= log.worker_id || "-" %></td>
+      <% } %>
+      <td>
+        <% if (log.dose && log.dose.length>0) { %>
+          <table class="mini">
+            <tr>
+              <% if (perms[user.type].includes("full-export")) { %>
+                <th>שם תורם</th>
+                <th>ת"ז תורם</th>
+              <% } %>
+              <th>תאריך תרומה</th>
+            </tr>
+            <% for (const dose of log.dose) { %>
+              <tr class="center">
+                <% if (perms[user.type].includes("full-export")) { %>
+                  <td class="adjust"><%= dose.name || "-" %></td>
+                  <td><%= dose.id || "-" %></td>
+                <% } %>
+                <td><%= dose.date.split("-").reverse().join("/") %></td>
+              </tr>
+            <% } %>
+          </table>
+        <% }%>
+      </td>
+    </tr>
+    <% } %>
+  </table>
+</div>
+
+</body>
+</html>

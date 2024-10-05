@@ -1,0 +1,64 @@
+{
+  "donors": {
+    "A+": ["A+", "A-", "O+", "O-"],
+    "O+": ["O+", "O-"],
+    "B+": ["B+", "B-", "O+", "O-"],
+    "AB+": ["A+", "O+", "B+", "AB+", "A-", "O-", "B-", "AB-"],
+    "A-": ["A-", "O-"],
+    "O-": ["O-"],
+    "B-": ["B-", "O-"],
+    "AB-": ["AB-", "A-", "B-", "O-"]
+  },
+  "population": 8323659,
+  "dist": { "O+": 32, "A+": 34, "B+": 17, "AB+": 7, "O-": 3, "A-": 4, "B-": 2, "AB-": 1 },
+
+  "names": {
+    "input": "Receive blood",
+    "Receive blood": "קליטת מנות דם",
+    "give": "Dispense blood",
+    "Dispense blood": "ניפוק מנות דם בשגרה",
+    "emerg": "Dispense blood (MCI)",
+    "Dispense blood (MCI)": "ניפוק מנות דם באר\"ן",
+    "remove": "Remove dose",
+    "Remove dose": "סילוק מנת דם",
+    "users": "Edit users",
+    "Edit users": "עריכת משתמשים",
+    "logs": "View logs",
+    "View logs": "צפייה בלוגים",
+    "account": "Update account",
+    "Update account": "שינוי סיסמה",
+    "inventory": "View inventory",
+    "View inventory": "מאגר הדם",
+    "admin": "אדמין",
+    "user": "יוזר",
+    "research-student": "סטודנט מחקר",
+    "Success": "בוצע בהצלחה",
+    "Parital success": "הצלחה חלקית",
+    "Failed": "פעולה נכשלה"
+  },
+  "msg": {
+    "alert1": "אנא מלאו את כל השדות.",
+    "alert2": "נופקו X מנות מסוג הדם המבוקש. המלאי אזל, הכמות הנותרת (Y) זמינה מסוג דם Z.",
+    "alert2b": "נופקו X מנות מסוג הדם המבוקש. המלאי אזל, הכמות הנותרת (Y) אינה זמינה באף סוג דם אחר מתאים.",
+    "alert3": "אין אפשרות לנפק, סוג הדם אזל במלאי.",
+    "notif1": "המנה נקלטה בהצלחה.",
+    "notif23": "נופקו X מנות.",
+    "pass": "סיסמה לא נכונה.",
+    "user": "משתמש זה לא קיים במערכת.",
+    "invalid_user": "לא ניתן X משתמש, משתמש עם שם או ת\"ז זה כבר קיים במערכת.",
+    "error": "המערכת נתקלה בבעיה, אנה נסה שנית."
+  },
+  "pagePerms": {
+    "partial-export": "partial-export",
+    "blood-bank": "blood-bank",
+    "full-export": "full-export",
+    "edit-users": "edit-users",
+    "edit-account": "edit-account",
+    "inventory": "inventory"
+  },
+  "userTypes": {
+    "admin": ["blood-bank", "full-export", "edit-users", "inventory"],
+    "user": ["blood-bank", "edit-account"],
+    "research-student": ["partial-export", "edit-account"]
+  }
+}
