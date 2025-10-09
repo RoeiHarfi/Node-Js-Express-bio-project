@@ -1,9 +1,16 @@
-# Bio project - Blood Bank
+# Bio Project - Blood Bank
 
 <img align="right" style="width:200px; height:auto;" src="/public/images/favicon.ico">
 
-A college project in Node JS using Express.<br>
-Description: a Blood bank website with the ability to recieve and dispense blood doses, has permission management with three user types and records preformed actions in logs that can be exported.
+<p> 
+   <img src="https://img.shields.io/badge/Node.js-grey?logo=node.js"> 
+   <img src="https://img.shields.io/badge/Express-grey?logo=express"> 
+   <img src="https://img.shields.io/badge/EJS-gray?logo=ejs">
+   <img src="https://img.shields.io/badge/🎓-College_Project-grey?labelColor=lightgrey"> 
+</p>
+
+A college project in Node.js using Express.<br>
+A blood bank web app that allows users to manage blood inventory by adding and dispensing doses. It features three user types with different permissions and logs all actions, which can be exported as PDF reports using a Puppeteer-based library.
 
 <table align="center">
    <thead>
@@ -43,15 +50,19 @@ Description: a Blood bank website with the ability to recieve and dispense blood
 
 # Usage
 
-1. Login to your preferred user. (registered users list is in `database/users.json`)
+1. Log in to your preferred user. (registered users list is in `database/users.json`)
 2. Regular users can:
-   - recieve blood doses, dispense a set amount, or dispense all O- blood doses in the case of an MCI.
-   - change their own password.
+   - Add blood doses to inventory, dispense a set amount, or dispense all O- blood doses in the case of an MCI.
+   - Change their own password.
 3. Research student users can:
-   - view & export logs with personal data emitted.
-   - change their own password.
+   - View and export logs with personal data emitted.
+   - Change their own password.
 4. Admin users can:
-   - recieve blood doses, dispense a set amount, or dispense all O- blood doses in the case of an MCI.
-   - view & export full logs.
-   - add, edit and delete users in the system.
-   - view the blood inventory and remove expired doses.
+   - Add blood doses to inventory, dispense a set amount, or dispense all O- blood doses in the case of an MCI.
+   - View and export full logs.
+   - Add, edit, and delete users in the system.
+   - View the blood inventory and remove expired doses.
+
+> [!CAUTION]
+> Passwords are stored in plaintext in `database/users.json`.<br>
+> This project is intended for learning/testing purposes only and **should not** be used in any real production environment.
